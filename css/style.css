@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height:100vh;
+    background-image: url(../img/book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav-link , .navbar-brand{
+    color:#fff;
+}
+
+header h1{
+    color: #fff;
+    font-size: 4rem;
+    margin: 25% 0 3% 0;
+}
+
+header span{
+    color: #eee;
+    font-size: 1.2em;
+}
+
+main{
+    padding:4rem 0;
+    transition: all linear 0.3s;
+}
+
+main:hover .col-md-3{
+    filter:grayscale(0.2) brightness(75%);
+    transition: all linear 0.3s;
+}
+
+main .col-md-3{
+    transition: all linear 0.5s;
+}
+
+main .col-md-3:hover{
+    filter:none;
+    transform: scale(1.05, 1.05) translate(0.5rem , -0.5rem);
+    transition: all linear 0.5s;
+}
+
+img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+#about{
+    padding: 4rem 0;
+}
+
+#about .col-md-4:first-child p{
+    text-align: left;
+}
+
+#about .col-md-4:last-child p{
+    text-align: right;
+}
+
+.bg{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    background: url("../img/book.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.bg h3{
+    margin: 2rem 0;
+    font-size: 3rem;
+    color:#fff;
+}
+
+#portret{
+    transition: all linear 0.4s;
+    border-radius: 50%;
+    filter:grayscale(.95);
+    border: 1px solid #000;
+}
+
+#portret:hover{
+    transition: all linear 0.4s;
+    filter: saturate(200%);
+    border-radius: 28% 5% 28% 5%;
+}
+
+footer{
+   width: 100%;
+   text-align: center; 
+}
+
+@media screen and (max-width:576px), only screen and (max-device-width:576px) {
+    header{
+        background-size: cover;
+        height: 150vh;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    #about .col-md-4{
+        margin: 0 0 2rem 0;
+    }
+
+    main .col-md-3{
+        margin:0 0 3rem 0;
+    }
+
+    main .col-md-3:hover{
+        filter:none;
+        transform:none;
+        transition: all linear 0.5s;
+    }
+}
+
